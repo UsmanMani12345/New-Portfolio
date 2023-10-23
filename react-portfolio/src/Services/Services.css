@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+.services{
+    height: 90vh;
+}
+.services-heading{
+    text-align: center;
+}
+.services-heading h1{
+    color: #000;
+    font-family: 'Roboto Mono', monospace;
+    text-decoration: none;
+    font-size:35px;
+    font-weight: 900;
+}
+
+.services-heading span{
+    color: crimson;
+    font-family: 'Roboto Mono', monospace;
+    text-decoration: none;
+    font-size:25px;
+    font-weight: 900;
+  }
+
+
+  .services-card{
+    height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    padding: 20px 40px;
+  }
+.card-content{
+    text-align: center;
+    background-color: whitesmoke;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 20px 40px;
+    border-top: 6px solid crimson;
+    border-bottom: 6px solid crimson;
+    scale: 1;
+}
+.card-content:hover{
+scale: 1;
+grid-gap: 20px;
+background-color: crimson;
+color: aliceblue;
+}
+
+
+  .card-content img{
+    max-width: 100px;
+    object-fit: cover;
+  }
+  .card-content h3{
+    font-size: 24px;
+    font-family: 'Roboto Mono', monospace;
+    text-decoration: none;
+    font-weight: 900;
+    text-shadow: rgba(0, 0, 0, 0.25);
+  }
+
+  .card-content p{
+    font-size: 17px;
+    font-family: 'Roboto Mono', monospace;
+    text-decoration: none;
+    font-weight: 300;
+    text-shadow: rgba(0, 0, 0, 0.25);
+  }
+
+
+
+
+
+  @media (max-width:768px), (max-width:568px){
+    
+    .services{
+      padding: 20px 40px;
+    }
+
+    .services-card{
+      display: grid;
+      grid-template-columns: 1fr;
+      padding: 20px 40px;
+    }
+    .card-content{
+      height: 350px;
+    }
+
+    .card-content h3{
+      font-size: 20px;
+    }
+
+    .card-content p{
+      font-size: 15px;
+    }
+  }
+
+
+  @media (max-width:489px){
+    
+    .services{
+      padding: 20px 40px;
+    }
+
+    .services-card{
+      display: grid;
+      grid-template-columns: 1fr;
+      height: 150px;
+    }
+    .card-content{
+      height: 350px;
+    
+    }
+    .card-content h3{
+    font-size: 20px;   
+    }
+
+    .card-content p{
+      font-size: 12px;   
+      }
+  }
+
+  @media (max-width:401px),(max-width:300px){
+    .card-content{
+      height: 250px;
+    }
+    .card-content h3{
+    font-size: 15px;   
+    }
+
+    .card-content p{
+      font-size: 7px;   
+      }
+
+
+  }

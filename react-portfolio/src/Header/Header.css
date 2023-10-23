@@ -1,0 +1,213 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+
+
+.header{
+    height: 100vh;
+    background-image: url('../images/bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    clip-path: polygon(50% 0%, 100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0);
+    width: 100%;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.porfolio{
+    color: thistle;
+    font-family: 'Roboto Mono', monospace;
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: 900;
+    text-shadow: rgba(0, 0, 0, 0.25);
+}
+.porfolio:hover{
+    color: thistle;
+}
+.porfolio span{
+    color: darkgoldenrod;
+}
+
+.nav-link a{
+    color: thistle;
+    font-family: 'Roboto Mono', monospace;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 900;
+    text-shadow: rgba(0, 0, 0, 0.25);
+    padding: 10px;
+}
+
+.nav-link a:hover{
+    color: darkgoldenrod;
+}
+
+
+/* header-content */
+
+.header-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.heading-para{
+    color: darkturquoise;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 38px;
+    font-weight: 900;
+}
+
+.heading-para h1{
+    color:thistle;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 48px;
+    font-weight: 900;
+}
+.heading-para p{
+    color:aqua;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 28px;
+    font-weight: 900;
+}
+.heading-para h2{
+    color: darkgoldenrod;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.heading-image img{
+    max-width: 400px;
+    max-height: 500px;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .navbar {
+        display: flex;
+      align-items: center;
+      background-color: rgba(0, 0, 0, 0.8); 
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      display: none; 
+      z-index: 1;
+      padding: 10px 0;
+    }
+  
+    .nav-link a {
+      /* margin: 10px 0;  */
+      font-size: 14px;
+    }
+  
+    
+    .toggle-button {
+      display: block; 
+      text-align: center;
+      font-size: 24px;
+      color: thistle;
+      cursor: pointer;
+      background: none;
+      border: none;
+    }
+  
+    /* Style the icon in the toggle button */
+    .toggle-button i {
+      font-size: 28px;
+    }
+  
+    /* Show the navbar when the showNavbar state is true */
+    .show-nav .navbar {
+      display: block;
+    }
+    .header-content{
+        display: flex;
+        padding: 60px 30px;
+    }
+    .heading-para{
+        font-size: 15px;
+    }
+
+    .heading-para h1{
+        font-size: 28px;
+    }
+    .heading-para p{
+        font-size: 20px;
+    }
+    .heading-para h2{
+        font-size: 30px;
+    }
+    .heading-image img{
+        max-width: 300px;
+    }
+  }
+  
+
+
+  @media (max-width: 390px), (max-width: 414px) {
+    .header-content{
+        display: flex;
+        
+    }
+    .heading-para{
+        font-size: 13px;
+    }
+    .heading-para h1{
+        font-size: 20px;
+    }
+    .heading-para p{
+        font-size: 13px;
+    }
+    .heading-para h2{
+        font-size: 16px;
+    }
+    .heading-image img
+    {
+        max-width: 150px;
+    }
+  }
+
+  @media (max-width: 375px) {
+    .header-content{
+        display: flex;
+        
+    }
+    .heading-para{
+        font-size: 13px;
+    }
+    .heading-para h1{
+        font-size: 20px;
+    }
+    .heading-para p{
+        font-size: 13px;
+    }
+    .heading-para h2{
+        font-size: 16px;
+    }
+    .heading-image img
+    {
+        max-width: 150px;
+    }
+  }

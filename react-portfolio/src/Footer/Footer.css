@@ -1,0 +1,41 @@
+.footer{
+    background-color: black;
+    border: 1px solid white;
+    height: 50px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.footer h1{
+    color: aliceblue;
+}
+.footer span{
+    padding: 10px;
+    
+}
+
+.icons{
+    background-color: aliceblue;
+    height: 25px;
+    width: 25px;
+}
+.icons:hover{
+    background-color: black;
+    color: aliceblue;
+}
+
+
+@media (max-width:768px) {
+    .footer{
+    padding: 60px 20px;
+    position: relative;
+    top: 750px;   
+    }
+    .footer h1{
+        font-size: 15px;
+    }
+    .icons{
+        position: relative;
+        bottom: 10px;
+    }
+}
